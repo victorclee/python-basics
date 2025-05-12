@@ -18,15 +18,25 @@
 # print_total()
 
 # Global scope
-def print_total():
-    def inner_print_total():
-        total = 7
-        print(f"From inner function: {total=}")
+# def print_total():
+#     def inner_print_total():
+#         total = 7
+#         print(f"From inner function: {total=}")
 
-    total = 12
-    inner_print_total()
-    print(f"From function {total=}")    
+#     total = 12
+#     inner_print_total()
+#     print(f"From function {total=}")    
 
-total = 5
-print_total()
-print(f"From global: {total=}")
+# total = 5
+# print_total()
+# print(f"From global: {total=}")
+
+# Global keyword
+counter = 0
+
+def update_counter():
+    global counter # bad practice
+    counter = counter + 1
+    
+update_counter()
+print(counter)
