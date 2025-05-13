@@ -32,11 +32,24 @@
 # print(f"From global: {total=}")
 
 # Global keyword
+# counter = 0
+
+# def update_counter():
+#     global counter # bad practice
+#     counter = counter + 1
+    
+# update_counter()
+# print(counter)
+
+# Use local names rather than global names
+# Write self-contained functions
+# Try to use unique object names, no matter what scope you are in
+# Avoid global name modifications throughout your programs
+
 counter = 0
 
-def update_counter():
-    global counter # bad practice
-    counter = counter + 1
-    
-update_counter()
+def update_counter(current__counter):
+    return current__counter + 1 
+
+counter = update_counter(counter)
 print(counter)
