@@ -7,6 +7,7 @@
 
 try:
     1/0
+    print("This will not print because of the error above.")
 except TypeError:
     print("Error: Both inputs must be numbers.")
 except ZeroDivisionError:
