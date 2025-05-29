@@ -25,10 +25,18 @@
 # NameError: name 'does_not_exist' is not defined
 
 # ZeroDivisionError: This code will raise a ZeroDivisionError because you cannot divide by zero.
-1/0
+# 1/0
 # Result:
 # Traceback (most recent call last):
 #   File "/Users/victorclee/Documents/learning/Python/recovering_from_errors.py", line 27, in <module>
 #     1/0
 #     ~^~
 # ZeroDivisionError: division by zero
+
+# OverflowError: This code will raise an OverflowError because the result of pow(2.0, 1_000_000) is too large to be represented.
+pow(2.0, 1_000_000)
+#  Result:
+# Traceback (most recent call last):
+#   File "/Users/victorclee/Documents/learning/Python/recovering_from_errors.py", line 36, in <module>
+#     pow(2.0, 1_000_000)
+# OverflowError: (34, 'Result too large')
