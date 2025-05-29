@@ -7,11 +7,17 @@ def coin_flip():
     else:
         return 'tails'
 
+def unfair_coin_flip(probability_of_tails):
+    if random.random() < probability_of_tails:
+        return 'heads'
+    else:
+        return 'tails'
+
 heads_tally = 0
 tails_tally = 0
 
-for trial in range(100_000_000):
-    result = coin_flip()
+for trial in range(100_000):
+    result = unfair_coin_flip(0.2)
     if result == 'heads':
         heads_tally += 1
     else:
