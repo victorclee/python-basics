@@ -16,8 +16,8 @@
 # print("Done with try and except.")
 
 
-try:
-    # Some code here
-except:
-    print("An error occurred.")
+# try:
+#     # Some code here
+# except:
+#     print("An error occurred.")
 # Bare except is not recommended as it catches all exceptions and makes debugging difficult.
