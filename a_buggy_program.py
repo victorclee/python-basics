@@ -1,7 +1,7 @@
 def add_underscores(word):
     new_word = "_"
     for char in word:
-        new_word = char + "_"
+        new_word = new_word + char + "_"
     return new_word
 
 
