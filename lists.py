@@ -24,12 +24,22 @@
 
 # print(numbers)
 
-colors = ["r", "g", "b"]
+# colors = ["r", "g", "b"]
 
-colors.insert(1, "o")
+# colors.insert(1, "o")
 
-print(colors)
+# print(colors)
 
-colors.append("v")
+# colors.append("v")
 
-print(colors)
+# print(colors)
+
+warm_tones = ["r", "o", "y"]
+
+warm_tones.extend(("g", "b", "v"))
+
+print(warm_tones)
+
+warm_tones.pop(4)
+
+print(warm_tones)
