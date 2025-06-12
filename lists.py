@@ -34,12 +34,26 @@
 
 # print(colors)
 
-warm_tones = ["r", "o", "y"]
+# warm_tones = ["r", "o", "y"]
 
-warm_tones.extend(("g", "b", "v"))
+# warm_tones.extend(("g", "b", "v"))
 
-print(warm_tones)
+# print(warm_tones)
 
-warm_tones.pop(4)
+# warm_tones.pop(4)
 
-print(warm_tones)
+# print(warm_tones)
+
+numbers = [1,2,3,4,5]
+total = 0
+
+for number in numbers:
+    total = total + number
+    
+print(total)
+
+print(sum(numbers))
+
+print(min(numbers))
+
+print(max(numbers))
