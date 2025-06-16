@@ -1,9 +1,3 @@
-capitals = {
-  "California": "Sacramento",
-  "New York": "Albany",
-  "Texas": "Austin",
-}
-
 my_dog = {
     "name": "Frieda",
     "age": 5,
@@ -11,16 +5,8 @@ my_dog = {
     "hungry": True,
 }
 
-print(my_dog["name"])
-
-my_dog["Breed"] = "Poodle"
-
-print(my_dog)
-
-my_dog["age"] = 6
-
-print(my_dog)
-
 del my_dog["hungry"]
 
-print(my_dog)
+if "hungry" in my_dog:
+    print("The dog is hungry.")
+
