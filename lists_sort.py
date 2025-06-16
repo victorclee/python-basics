@@ -15,3 +15,5 @@ numbers.sort(reverse=True)  # Sorts the list in place in reverse order
 print(colors)  # Output: ['yellow', 'red', 'green', 'blue']
 print(numbers)  # Output: [10, 5, 3, 1] 
 
+colors.sort(key=len)  # Sorts the list by length of the strings
+print(colors)  # Output: ['red', 'blue', 'green', 'yellow']
