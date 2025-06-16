@@ -10,3 +10,11 @@ del my_dog["hungry"]
 if "hungry" in my_dog:
     print("The dog is hungry.")
 
+capitals = {
+    "California": "Sacramento",
+    "New York": "Albany",
+    "Texas": "Austin",
+}
+
+for state in capitals:
+    print(f"The capital of {state} is {capitals[state]}.")
