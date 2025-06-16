@@ -1,20 +1,17 @@
-my_dog = {
-    "name": "Frieda",
-    "age": 5,
-    "nicknames": ["Fru-Fru", "Lady McNugget"],
-    "hungry": True,
-}
-
-del my_dog["hungry"]
-
-if "hungry" in my_dog:
-    print("The dog is hungry.")
-
 capitals = {
-    "California": "Sacramento",
-    "New York": "Albany",
-    "Texas": "Austin",
+    "California": {
+        "capital": "Sacramento",
+        "flowers": "California Poppy",
+    },
+    "New York": {
+        "capital": "Albany",
+        "flowers": "Rose",
+    },
+    "Texas": {
+        "capital": "Austin",
+        "flowers": "Bluebonnet",
+    },
 }
 
-for state in capitals:
-    print(f"The capital of {state} is {capitals[state]}.")
+for state, facts in capitals.items():
+    print(f"{state} - Capital: {facts['capital']}, Flower: {facts['flowers']}")
