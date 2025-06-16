@@ -17,3 +17,13 @@ print(numbers)  # Output: [10, 5, 3, 1]
 
 colors.sort(key=len)  # Sorts the list by length of the strings
 print(colors)  # Output: ['red', 'blue', 'green', 'yellow']
+
+def get_second_element(item):
+    return item[1]  # Returns the second element of the tuple
+  
+items = [(-10, 2), (0, 3), (10, 1)]
+items.sort()
+print(items)  
+
+items.sort(key=get_second_element)
+print(items)  
